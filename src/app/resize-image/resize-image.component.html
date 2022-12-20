@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Redimensionar de imagenes</h3>
+    <br>
+    <br>
+    <label>Alto en px: </label> <input [(ngModel)]="width" type="text">
+    <br>
+    <br>
+    <label>Ancho en px: </label> <input [(ngModel)]="height" type="text">
+    <br>
+    <br>
+
+    <div class="text-center">
+        <input class="form-control" type="file" (change)="onChange($event)" accept="image/png">
+        <br>
+        <br>
+        <button (click)="onUpload()" class="btn btn-success">
+            Cargar imagen
+        </button>
+        <br>
+        <br>
+        <br>
+        <a href="{{urlDownload}}" target="_blank" *ngIf="urlDownload">Descargar archivo</a>
+    </div>
+
+</div>

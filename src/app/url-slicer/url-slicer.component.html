@@ -1,0 +1,21 @@
+<div class="container">
+    <label>URL Larga: </label><input [(ngModel)]="urlLarga" type="text">
+    <br>
+    <br>
+    <button (click)="acortar()" class="btn btn-info">Acortar URL!</button>
+    <br>
+    <br>
+    <label *ngIf="urlCorta">Resultado: {{urlCorta}}</label>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <label>Buscar URL Corta: </label><input [(ngModel)]="urlCortaBusqueda" type="text">
+    <br>
+    <br>
+    <button (click)="buscar()" class="btn btn-info">Buscar URL!</button>
+    <br>
+    <br>
+    <label *ngIf="urlLargaBusqueda">Resultado: {{urlLargaBusqueda}}</label>
+</div>
